@@ -1,0 +1,181 @@
+ ****************  GIT  *************
+ created in 2005 by linus torvalds.
+Git is a version control system.
+git helps to keep track of changes in code.
+git is used to collaborate on code.
+
+
+
+To know git version:
+   Command:
+           git --version
+           output: it will show version
+
+
+
+Configure Git
+ Command:
+         git config --global user.name "Kripesh"
+         git config --global user.email "kripeshpanta44@gmail.com"
+
+    -- Global- it is use to keep every repository name and email at the same time 
+    -- If we want different name and email in different repository then we dont need to use the global 
+
+
+
+Creating git folder
+
+mkdir- make new directory
+cd - change the current working directory.
+ Command: 
+    mkdir foldername
+    cd filename
+
+
+
+Initialize Git 
+ Command:
+        git init
+
+
+
+to know list of file inside the repository
+ Command:
+     ls
+     
+     --ls will list the files in the directory
+
+
+
+checking the status of repository
+ Command:
+    git status 
+
+
+
+
+Git Staging Enviornment
+ 
+ one of the core function of git is the concept of staging environment and the commit.
+
+ as we will be worling we will be adding,editting and removing files. but whenever we finish the work we add the files to staging environment.
+
+ Staged files are that files that are ready to be commited to the repository we are working on.
+ 
+ Command: 
+    git add filename
+ 
+ doing this the file should be staged.
+ lets check it 
+ Command: 
+   git status
+
+ we can also stage more than 1 files at a time.
+ Command:
+    git add --all
+    Using -all instead of individual filename will stage all changes(new,modified,deleted) files.
+
+    the shorthand command for [ git add -all ] is 
+    [ git add -A ]
+   
+    we can use command below to commit changes to all tracked files that have been modified or deleted. Not new files or Untracked files.
+    Command:
+        git -a 
+
+Git commit
+ since we finished our work, we are ready to move stage to commit for our repo.
+
+ adding commit keep track of our progress and changes as we work. 
+ 
+ git consider each commit change point or save point.
+ 
+ Command:
+  git commit
+
+ when we commit we should always include a message. because adding message will later make ourself earier to identify the changes inside it.
+ 
+ Command:
+  git commit -m"I have made changes in nav bar"
+
+doing this the staged environment has been       committed to our repo with the message "I have made changes in nav-bar"
+
+
+To see the the status in more compact way we can use
+
+Command:
+ git status --short
+
+ where 
+    ?? -- Untracked files
+    A -- Files added to stage
+    M -- Modified files
+    D -- Deleted files
+ 
+ Skipping the staging Enviornment is not recomended. Skipping stage step sometimes can make us include unwanted changes.
+
+
+
+Git Commit Log
+ To view the history of commits for a repository, we use log command.
+ Command: 
+    git log
+
+
+
+Git help
+
+we coder dont have to remember everything
+ we can use help option to get every command 
+ Command:
+    git help --all
+    This is to see all the possible commands
+
+    git command --help 
+    git commit -h // prefer this*******
+    This is to see all the available options for the specific command.
+
+   note: if we get stuck in the list view, then we can press shift + G to jump to end and then q to exit
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Exercise:
+Q. Insert the missing part of the command to check which version of Git (if any) is installed.
+-> git________
+
+Q. Initialize Git on the current folder:
+-> git________
+
+Q. Set the user name for the current repository to "GIT&GITHUB":
+-> git config_______ "GIT&GITHUB"
+
+Q. Check the status of the Git:
+-> git__________
+
+Q. Add index.html to the Staging Enviornment:
+-> git________ index.html
+
+Q.Show the possible options for the status command in command line:
+-> git status -help
+
+Q. Show all git possible commands in command line:
+-> git help --all
+
