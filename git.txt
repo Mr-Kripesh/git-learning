@@ -6,14 +6,14 @@ git is used to collaborate on code.
 
 
 
-To know git version:
+***********To know git version:**********
    Command:
            git --version
            output: it will show version
 
 
 
-Configure Git
+**********Configure Git**********
  Command:
          git config --global user.name "Kripesh"
          git config --global user.email "kripeshpanta44@gmail.com"
@@ -23,17 +23,16 @@ Configure Git
 
 
 
-Creating git folder
-
-mkdir- make new directory
-cd - change the current working directory.
+**********Creating git folder**********
+  mkdir- make new directory
+   cd - change the current working directory.
  Command: 
     mkdir foldername
     cd filename
 
 
 
-Initialize Git 
+**********Initialize Git********** 
  Command:
         git init
 
@@ -54,7 +53,7 @@ checking the status of repository
 
 
 
-Git Staging Enviornment
+**********Git Staging Enviornment**********
  
  one of the core function of git is the concept of staging environment and the commit.
 
@@ -79,7 +78,8 @@ Git Staging Enviornment
     [ git add -A ]
    
 
-Git commit
+**********Git commit**********
+
  since we finished our work, we are ready to move stage to commit for our repo.
 
  adding commit keep track of our progress and changes as we work. 
@@ -94,12 +94,12 @@ Git commit
  Command:
   git commit -m"I have made changes in nav bar"
 
-doing this the staged environment has been       committed to our repo with the message "I have made changes in nav-bar"
+  doing this the staged environment has been committed to our repo with the message "I have made changes in nav-bar"
 
 
 To see the the status in more compact way we can use
 
-Command:
+ Command:
  git status --short
 
  where 
@@ -112,16 +112,17 @@ Command:
 
 
 
-Git Commit Log
+**********Git Commit Log**********
+
  To view the history of commits for a repository, we use log command.
  Command: 
     git log
 
 
 
-Git help
+**********Git help**********
 
-we coder dont have to remember everything
+ we coder dont have to remember everything
  we can use help option to get every command 
  Command:
     git help --all
@@ -135,8 +136,46 @@ we coder dont have to remember everything
 
 
 
+********** Git Branches **********
+  in git branch is the new/seperate version of the main repository.
+   
+   with git 
+    we can edit the code without impacting the main branch 
+    suppose there is an error in code which needs to be fixed ASAP
+     then we can create a new branch from the main project called small-error-fix
+     then we can fix the error and merge the small-error-fix branch with the main branch 
+     then we can go back to the new-design branch, and finish the work there
+     then we can merge the new-design branch with main and error will be resolved
 
 
+  Branches allows us to work on different parts of prohect without impacting the main branch.
+
+  When the work is done the new branch can be merged to the main branch.
+
+  we can even switch between branches and work on different projects without them interfering with each other.
+
+  Branching in git is very light-weight and fast.
+
+ NEW Git Branch
+  suppose we have to make changes in our files named document.html
+  so now we create new branch
+   Command:
+     git branch edit-document
+
+   now we have created new branch called edit-document
+    lets see whether the new branch has been created or not!
+     Command: 
+       git branch
+   
+   we can see the new branch edit-document
+   but we can also see the " * " beside the main, which means we are currently in main branch
+
+   checkout is the command used to check out of the branch. Moving from current branch to the another 
+    Command:
+       git checkout edit-document 
+
+      Now we are in our newly created branch called edit-branch
+      
 
 
 
