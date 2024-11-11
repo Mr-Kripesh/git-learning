@@ -78,9 +78,6 @@ Git Staging Enviornment
     the shorthand command for [ git add -all ] is 
     [ git add -A ]
    
-    we can use command below to commit changes to all tracked files that have been modified or deleted. Not new files or Untracked files.
-    Command:
-        git -a 
 
 Git commit
  since we finished our work, we are ready to move stage to commit for our repo.
