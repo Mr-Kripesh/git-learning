@@ -148,7 +148,7 @@ To see the the status in more compact way we can use
      then we can merge the new-design branch with main and error will be resolved
 
 
-  Branches allows us to work on different parts of prohect without impacting the main branch.
+  Branches allows us to work on different parts of project without impacting the main branch.
 
   When the work is done the new branch can be merged to the main branch.
 
@@ -175,8 +175,30 @@ To see the the status in more compact way we can use
        git checkout edit-document 
 
       Now we are in our newly created branch called edit-branch
+
+   Create, and move to a new branch with the name hello-you:
+    Command:
+      git checkout -b hello-you
       
 
+
+********** Git Branch Merge************
+  
+  lets assume we have an branch called document-txt
+  now for merging baranches. First we need to change to the master branch:
+   Command:
+    git checkout main  
+    
+    [as by default we will have branch called main as default]
+
+   Now we have switch to main branch lets merge it:
+    Command: 
+     git merge document-txt
+ 
+   as doing this we have successfully merged new branch into the main and now we can delete the duplicate branch as it is of no use
+    Command: 
+      git branch -d document-txt
+      
 
 
 
