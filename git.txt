@@ -191,14 +191,42 @@ To see the the status in more compact way we can use
     
     [as by default we will have branch called main as default]
 
-   Now we have switch to main branch lets merge it:
+  Now we have switch to main branch lets merge it:
     Command: 
      git merge document-txt
  
-   as doing this we have successfully merged new branch into the main and now we can delete the duplicate branch as it is of no use
+  as doing this we have successfully merged new branch into the main and now we can delete the duplicate branch as it is of no use
     Command: 
       git branch -d document-txt
-      
+
+
+
+************ Merge Conflict************ 
+  It occur when someone edits file and another person tried to delete or due to conflicting insident.
+ 
+
+
+************Git Github************
+ First we need to create the repository in github and copy the HTTPS link of that respective repo.
+  then we can use this command to implement it in our git
+   Command:
+    git remote add origin https://.............
+
+  Git remote add origin URL specifies that we are adding a remote repo.
+
+  Now we are going to finally push our main branch to the repo we created and linked to out git
+
+   Command:
+    git push --set-upstream origin main 
+
+
+************Git Pull from GitHub************
+  
+  
+
+
+
+ 
 
 
 
