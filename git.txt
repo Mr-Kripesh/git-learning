@@ -220,9 +220,79 @@ To see the the status in more compact way we can use
     git push --set-upstream origin main 
 
 
+
 ************Git Pull from GitHub************
+ pulling is done to keep the file up-to-date as many people can have changed the files in between.
+
+ in Git pull is the combination of
+       fetch and 
+       merge
+   where fetch - retrives the latest version/ updated data from repo and 
+   merge- it merge the latest one with the exsiting branch in local
+
+  Fetch helps to get all the history of tracked branch/repo
+  Command:
+    git fetch origin
+
+  Merge helps to combine current branch to the latest branch in repo.
+  Command:
+    git merge origin/master
   
+
+  But we can do git pull without doing all this 
+  just simply using Git pull feature
+
+  Command: git pull origin
+
+
+
+************ Git Push to github ************
+ lets asume that we had made some changes in our document-txt file now lets commit the changes 
+  Command:
+   git commit -a -m "Upadte regarding......"
+
+ lets see the status 
+  Command:
+   git status
+
+  Now we can push our changes to our remote origin
+  Command:
+   git push origin
+
+   Now we have successfully push the local repo to remote repo
+
+
+
+************ Git Pull Branch from GitHub************ 
+ now we will learn to pull branch from github using git
+ Command:
+  git pull
+
+  after doing this our main branch will be upto date.
+  we can check the status of it
+  Command:
+   git status
+
+   we can see in which branch are we working currently
+   Command: 
+     git branch
+
+  To see all the available option of branches we can use
+  Command:
+   git branch -A
   
+  we can also see the available remote branches using
+  Command: 
+   git branch -r
+
+
+
+************ Git Push Branch to GitHub************ 
+ 
+   
+
+
+
 
 
 
