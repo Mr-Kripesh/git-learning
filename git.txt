@@ -279,7 +279,7 @@ To see the the status in more compact way we can use
 
   To see all the available option of branches we can use
   Command:
-   git branch -A
+   git branch -a
   
   we can also see the available remote branches using
   Command: 
